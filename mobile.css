@@ -33,12 +33,13 @@ a:-webkit-any-link{
     text-align: center;
     color:#4e4e4e;
     top: 250px;
-    left: 70px;
+    left: 170px;
     background-color: #070707;
     border: 10px solid transparent;
     border-image: url('lace-border-box-blk.png') 20 round;
     border-image-outset: 8px;
     border-radius: 20px;
+    transform: scale(2);
 }
 
 
