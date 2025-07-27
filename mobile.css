@@ -32,8 +32,6 @@ a:-webkit-any-link{
     width: 200px;
     text-align: center;
     color:#4e4e4e;
-    top: 250px;
-    left: 170px;
     background-color: #070707;
     border: 10px solid transparent;
     border-image: url('lace-border-box-blk.png') 20 round;
