@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    
+    <title>ᵐᵒᵇᶦˡᵉ</title>
+	<meta name="robots" content="noindex, follow" />  
+   <script>
+  if (/Mobile|Windows Phone|Lumia|Android|iPhone|iPod|Blackberry|PlayBook|BB10|Opera Mini|\bCrMo\/|Opera Mobi/i.test(navigator.userAgent)) {
+    window.location.replace("mobile.html");
+  }
+  </script>
+    <link rel="shortcut icon" type="image/gif" href="aboutmeicon.png">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    
+    <link rel="stylesheet" href="mobile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="text/javascript" language="JavaScript">
+			function click(e){
+				document.getElementById("teste").innerHTML = "";
+				var menu = document.getElementById("context_menu");
+				var mouseEvent = e || event;
+				if (mouseEvent.button == 2 || mouseEvent.button == 3) {
+					mostrar(mouseEvent);
+					menu.onmouseout = function(e){
+						var mouseEvent = e || event;
+						var element = mouseEvent.relatedTarget || mouseEvent.toElement; 
+						if (element.nodeName != "LI") {
+							mouseEvent.toElement;
+						}
+					};
+				}
+				if (mouseEvent.button == 0 || mouseEvent.button == 1) {
+					esconder();
+				}
+			}
+			
+			document.onmousedown = click;
+			document.oncontextmenu = function(){
+				return false
+			};
+			function mostrar(e){
+				var menu = document.getElementById("context_menu");
+				menu.style.display = "block";
+				menu.style.top = e.pageY + 5 + "px";
+				menu.style.left = e.pageX + 5 + "px";
+			}
+			
+			function esconder(){
+				setTimeout(function(){
+					var menu = document.getElementById("context_menu");
+					menu.style.display = "none"
+				}, 100);
+			}
+			
+		</script>
+   
+  </head>
+
+  <body oncontextmenu="return false" ondragstart="return false">
+    <div id="everything">
+    <div id="teste"></div>
+    <div class="text1">
+        jsisoul.com is currently not mobile-friendly,
+        <br> please return on desktop 
+        <br> ( • ᴖ • ｡)
+    </div>
+  </body>
+  </html>

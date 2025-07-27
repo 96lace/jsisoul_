@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    
+    <title>ᵅᵇᵒᵘᵗ ᘝ</title>
+	<meta name="robots" content="noindex, follow" />  
+   <script>
+  if (/Mobile|Windows Phone|Lumia|Android|iPhone|iPod|Blackberry|PlayBook|BB10|Opera Mini|\bCrMo\/|Opera Mobi/i.test(navigator.userAgent)) {
+    window.location.replace("mobile.html");
+  }
+  </script>
+    <link rel="shortcut icon" type="image/gif" href="aboutmeicon.png">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="text/javascript" language="JavaScript">
+			function click(e){
+				document.getElementById("teste").innerHTML = "";
+				var menu = document.getElementById("context_menu");
+				var mouseEvent = e || event;
+				if (mouseEvent.button == 2 || mouseEvent.button == 3) {
+					mostrar(mouseEvent);
+					menu.onmouseout = function(e){
+						var mouseEvent = e || event;
+						var element = mouseEvent.relatedTarget || mouseEvent.toElement; 
+						if (element.nodeName != "LI") {
+							mouseEvent.toElement;
+						}
+					};
+				}
+				if (mouseEvent.button == 0 || mouseEvent.button == 1) {
+					esconder();
+				}
+			}
+			
+			document.onmousedown = click;
+			document.oncontextmenu = function(){
+				return false
+			};
+			function mostrar(e){
+				var menu = document.getElementById("context_menu");
+				menu.style.display = "block";
+				menu.style.top = e.pageY + 5 + "px";
+				menu.style.left = e.pageX + 5 + "px";
+			}
+			
+			function esconder(){
+				setTimeout(function(){
+					var menu = document.getElementById("context_menu");
+					menu.style.display = "none"
+				}, 100);
+			}
+			
+		</script>
+   
+  </head>
+
+  <body oncontextmenu="return false" ondragstart="return false">
+    <div id="everything">
+    <div id="teste"></div>
+	<div class="links">
+	<div id="homepage">
+		<a href="store.html" target="_blank" style="text-decoration: none; color:#414141; width: 174px;">
+			⌞store⌝
+		</a>
+	</div>
+	<div id="instagram">
+		<a href="https://www.instagram.com/jsisoul_/" target="_blank" style="text-decoration: none; color:#414141; width: 174px;">
+			⌞instagram⌝
+		</a>
+	</div>
+	<div id="tiktok">
+		<a href="https://www.tiktok.com/@jsisoul_" target="_blank" style="text-decoration: none; color:#414141; width: 174px;">
+			⌞tiktok⌝
+		</a>
+	</div>
+	</div>
+	<div id="textcontainer">
+		<div id="banner2">
+			<img src="banner2.png">
+		</div>
+		<div id="text1">
+			<span id="firstletter">h</span>i, and welcome.
+			<br> <br>
+			i'm a digital artist and aspiring 3d modeller. my work tends to drift between 2000s nostalgia and surrealism.
+			<br> <br>
+			i'm currently focused on building visuals that feel as if they belong to forgotten dreams, flickering dream sequences, or things left behind in the past.
+			<br> <br>
+			mostly self-taught, with a background in game design. i code my own websites and spend a little too much time perfecting shadows and glitchy transitions.
+			<br> <br>
+			commissions are closed for now, but feel free to explore. 
+			<br> <br>
+			thank you for visiting.
+		</div>
+	</div>
+	<div id="musicplayer" class="player1010">
+		♫
+	</div>
+	<audio id="myplaylist" src="https://files.catbox.moe/h9qn3r.mp3"></audio>
+	<script src="musicbox2.js"></script>
+	<div id="border1">
+		<img src="borderyay.png">
+	</div>
+	<div id="border2">
+		<img src="borderyay.png">
+	</div>
+	<div id="border3">
+		<img src="borderyay.png">
+	</div>
+	<div id="border4">
+		<img src="borderyay.png">
+	</div>
+    <div class="container1"></div>
+    <div class="container2">
+        <div class="container3">
+			<div id="header2">
+			
+			</div>
+			<div id="banner1">
+				<img src="b12.webp">
+			</div>
+			<div id="header1">
+				<img src="header1212.png">
+			</div>
+		</div>
+    </div>
+    <div id="context_menu">
+    </div>
+    <div id="credits" style="text-decoration: none; border-bottom: 1px dotted #414141; padding-bottom: 5px; color:#414141; width: 174px;">
+		jsisoul_ ♱ all rights reserved
+	</div>
+  </body>
+  </html>

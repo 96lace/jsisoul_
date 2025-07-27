@@ -1,0 +1,67 @@
+@font-face{
+    font-family: "bellefair";
+    src: url('Bellefair-Regular.ttf')
+}
+
+@font-face{
+    font-family: "adinekir";
+     src: url('adinekir.ttf')
+}
+
+@font-face{
+    font-family: "blackrose";
+     src: url('BlackRoseGothic-Free-BF672d8ad1746f0.ttf')
+}
+
+
+a:-webkit-any-link{
+    cursor: url(blackcursor13.png), pointer;
+}
+
+::selection{
+   text-shadow: 0 0 2px #393939;color:#393939 
+}
+
+::-moz-selection{
+   text-shadow: 0 0 2px #393939;color:#393939
+}
+
+.text1{
+    position: fixed;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    color:#4e4e4e;
+    top: 250px;
+    left: 70px;
+    background-color: #070707;
+    border: 10px solid transparent;
+    border-image: url('lace-border-box-blk.png') 20 round;
+    border-image-outset: 8px;
+    border-radius: 20px;
+}
+
+
+body{
+   background-color: #0a0a0a;
+   background-size: 30px;
+   filter: brightness(1.75);
+   width: 100vw;
+   height: 100vh;
+   margin: 0;
+   overflow-y: hidden;
+   overflow-x: hidden;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    cursor: url(blackcursor12.png), auto;
+    font-family:'bellefair';
+    font-weight: 500;
+    font-size: 20px;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}

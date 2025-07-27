@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    
+    <title>ʲˢᶦˢᵒᵘˡ_ ˢᵗᵒʳᵉ</title>
+ 	<meta name="robots" content="noindex, follow" />  
+   <script>
+  if (/Mobile|Windows Phone|Lumia|Android|iPhone|iPod|Blackberry|PlayBook|BB10|Opera Mini|\bCrMo\/|Opera Mobi/i.test(navigator.userAgent)) {
+    window.location.replace("mobile.html");
+  }
+  </script>
+    <link rel="shortcut icon" type="image/gif" href="https://files.catbox.moe/b4cyc8.png">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    
+    <link rel="stylesheet" href="store.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="text/javascript" language="JavaScript">
+			function click(e){
+				document.getElementById("teste").innerHTML = "";
+				var menu = document.getElementById("context_menu");
+				var mouseEvent = e || event;
+				if (mouseEvent.button == 2 || mouseEvent.button == 3) {
+					mostrar(mouseEvent);
+					menu.onmouseout = function(e){
+						var mouseEvent = e || event;
+						var element = mouseEvent.relatedTarget || mouseEvent.toElement; 
+						if (element.nodeName != "LI") {
+							mouseEvent.toElement;
+						}
+					};
+				}
+				if (mouseEvent.button == 0 || mouseEvent.button == 1) {
+					esconder();
+				}
+			}
+			
+			document.onmousedown = click;
+			document.oncontextmenu = function(){
+				return false
+			};
+			function mostrar(e){
+				var menu = document.getElementById("context_menu");
+				menu.style.display = "block";
+				menu.style.top = e.pageY + 5 + "px";
+				menu.style.left = e.pageX + 5 + "px";
+			}
+			
+			function esconder(){
+				setTimeout(function(){
+					var menu = document.getElementById("context_menu");
+					menu.style.display = "none"
+				}, 100);
+			}
+			
+		</script>
+           <style>
+            #everything2{
+                z-index: 2;
+                position: absolute;
+                top: 400px;
+                left: 1200px;
+
+            }
+            nav {
+                padding: 10px;
+                display: flex;
+                gap: 15px;
+                z-index: 5;
+            }
+            nav a {
+                color:rgb(148, 143, 143);
+                text-decoration: none;
+                z-index: 5;
+            }
+            section {
+                display: none; /* All sections hidden by default */
+                padding: 20px;
+                z-index: 5;
+            }
+            section.active {
+                display: block; /* Show active section */
+                z-index: 5;
+            }
+            .hidden {
+    display: none;
+    z-index: 5;
+}
+        </style>
+  </head>
+
+  <body oncontextmenu="return false" ondragstart="return false">
+    <div id="everything">
+    <div id="teste"></div>
+    <div id="context_menu">
+        © jsisoul_
+    </div>
+    <div id="storelogo">
+        <img src="https://files.catbox.moe/3dx7bt.gif">
+    </div>
+    <div id="everything2">
+    <div id="navigators">
+    <nav>
+        <div id="home1">
+        <a data-target="home">♥ home</a>
+        </div>
+        <div id="terms1">
+        <a data-target="tos"> ♥ t.o.s</a>
+        </div>
+        <div id="services1">
+        <a data-target="services">♥ services</a>
+        </div>
+        <div id="other1">
+        <a data-target="form">♥ form</a>
+        </div>
+    </div>
+    <div id="tip1">
+        <a href="https://ko-fi.com/jsisoul_" target="blank" style=" color:#b8a79c; text-decoration: none;">♥ tip</a>
+    </div>
+    </nav>
+    <div id="sections">
+    <section id="home" class="active">
+        <div id="squaretalking">
+            <div id="toslink">
+                <nav>
+                    <a data-target="tos" style="text-decoration: none; text-shadow: 0 0 2px #919090;
+    color:#acaaaa; border-bottom: 1px dotted; padding-bottom: 2px;">terms of service</a>
+                </nav>
+            </div>
+            <div id="squaretalk">
+            <p style="font-size: 24px;">♥ welcome</p> to my official site for commissions and whatnot. <br>
+            feel free to look around and read my ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎  ‎ ‎ .
+       <br> <br> also, please take a brief snoop at my <a href="https://www.instagram.com/jsisoul_/" style="text-decoration: none; text-shadow: 0 0 2px #919090;
+    color:#acaaaa; border-bottom: 1px dotted; padding-bottom: 2px;" target="_blank">portfolio</a> to see more examples of my work!
+    </div>
+    <div id="note">
+        <div id="notetext">
+            <p style="font-size: 24px;">♥ status</p>
+          <div id="notetext2">currently closed</div>
+        </div>
+    </div>
+    <div id="status">
+        <div id="statustext">
+            <p style="font-size: 24px;">♥ info</p>
+            site is still a w.i.p, but you are free to look around and get an idea of how things will work around here.
+        </div>
+    </div>
+    </div>
+    </section>
+    <section id="tos">
+      <div id="tos333">
+        terms of service
+      </div>
+        <div id="notecontainer">
+        <div id="note1">
+          <p style="font-size: 24px;" id="noteheader">♥</p>
+          <div id="note1container">
+            <div id="note1text">
+                
+                i am open to commissions that align with my services available, but i will <strong>not</strong> accept requests for the following:
+                <br> <br>
+                • proshipper content
+                <br>
+                • stolen/ai generated content
+                <br>
+                • exploitation of minors 
+                <br> <br>
+                requesting for any of the above will result in a permanent placement on my blacklist. thank you for understanding. 
+                <br> <br>
+                some other things that i am currently <strong>not</strong> accepting requests for:
+                <br> <br>
+                • extreme nsfw
+                <br>
+                • fan art of your desired franchises (due to copyright reasons)
+                <br>
+                • realism (my art aims to be as stylised as possible)
+                <br>
+            </div>
+          </div>
+        </div>
+        <div id="note2">
+            <div id="note2text">
+                <p style="font-size: 24px;" id="noteheader2">♥</p>
+                my main source of payment type is paypal, but you can pay through ko-fi if that is preferred. 
+                <br> <br> please note that i <strong>do not</strong> accept refunds. this is because i immediately begin working on said work as soon as i receive your payment. therefore, parents please keep an eye on your children to avoid the hassle this will cause to both parties.
+            </div>
+        </div>
+        <div id="note3">
+            <div id="note3text">
+                <p style="font-size: 24px;" id="noteheader1">♥</p>
+                by purchasing work from me, you agree to not use said work to train ai, is for personal-use only unless discussed otherwise and credit to me is properly issued. i retain the right to accept or decline any request at my discretion.
+                <br> <br>
+                as a creator, i affirm that my work is entirely original and not generated using ai prompts. i do not endorse or encourage the use of ai as a replacement for the creativity and craftsmanship of fellow artists.
+                <br> <br>
+                by commissioning me, you, the client, agrees to allow the finished work to be showcased in my portfolio and for promotional purposes (e.g., on my website, social media, and other marketing platforms).
+
+this is provided that the work is publicly presented in a non-sensitive manner (no confidential information, specific personal data, or proprietary content shown). if you, the client, prefers that the work not be displayed publicly, you can request this, and i will respect your wishes.
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="services">
+        <a href="https://ko-fi.com/jsisoul_" target="blank">
+            <div id="marqueesection">
+                <div class="marquee">
+                    <div>
+                        <span>pssst...ko-fi members get <strong>30% off</strong> on all products!</span>
+                        <span>pssst...ko-fi members get <strong>30% off</strong> on all products!</span>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <div id="servicescontainer">
+        <div id="servicesnav">
+            <div id="models3d">
+                <div id="modelsbanner"></div>
+                <div id="modelstext">
+                    <div id="modelstext1">
+                        <p style="font-size: 22px;">♥ 3d models</p>
+               3d creation of your oc, items and backgrounds
+                    </div>
+                </div>
+                <div id="models3dinner"></div>
+            </div>
+         </a>
+            <div id="conceptartt">
+                <div id="conceptbanner"></div>
+                <div id="concepttext">
+                    <div id="concepttext1">
+                        <p style="font-size: 22px;">♥ concept art</p>
+               concept art for characters, items and backgrounds
+                    </div>
+                </div>
+                <div id="conceptinner"></div>
+            </div>
+            <div id="illustrationss">
+                <div id="illustbanner"></div>
+                <div id="illusttext">
+                    <div id="illusttext1">
+                        <p style="font-size: 22px;">♥ illustrations</p>
+                        completely rendered headshot/bust or full body
+                    </div>
+                </div>
+                <div id="illustinner"></div>
+            </div>
+            <div id="webdesignstuff">
+                <div id="webdesignbanner"></div>
+                <div id="webdesigntext">
+                    <div id="webdesigntext1">
+                        <p style="font-size: 22px;">♥ web design</p>
+                        functional website that fits your wishes
+                    </div>
+                </div>
+                <div id="webdesigninner"></div>
+            </div>
+            <div id="enquiries">
+                have a different enquiry? email me at 96laces@gmail.com
+            </div>
+        <nav>
+            <div id="models3dd">
+            <a data-target="models3"> ♥ read more ♥ </a>
+            </div>
+            <div id="conceptart111">
+            <a data-target="conceptart"> ♥ read more ♥ </a>
+            </div>
+            <div id="illust111">
+            <a data-target="illusts"> ♥ read more ♥ </a>
+            </div>
+            <div id="websitess1">
+            <a data-target="websitess"> ♥ read more ♥ </a>
+            </div>
+        </nav>
+        </div>
+        </div>
+    </section>
+    <section id="models3">
+       <div id="models3headertext">
+        3d models
+       </div>
+       <div class="models3dcontainer222">
+       <div id="modelexample1">
+        <div id="modelexample1inner"></div>
+       </div>
+       <div id="modelexample2">
+        <div id="modelexample2inner"></div>
+       </div>
+        <div id="description1">
+            low-poly nintendo ds-inspired models that capture early 00s gaming nostalgia, designed for efficiency. perfect for retro games, prototyping, and stylised projects, tailored for developers, animators, and clients seeking authentic retro assets.
+            <p style="color:#080808; text-align: center; font-size:20px;">↓ scroll down for available services ↓</p>
+        </div>
+        <div id="serviceslist1">
+           <p id="modelscharacter3d" style="font-size: 22px;">♥ 3d character models . . . ♥ </p> custom low-poly character models, ideal for use in games, models, stylised projects. models come fully uv-mapped and rendered in either static or animated formats. choose from a variety of rendering options to best suit your project needs. 
+            <br>
+            <p id="staticmodel2" style="font-size:20px;">• static character model - <strong>£25</strong> </p>
+            high quality render of your character in a low-poly style. perfect for use in images or icons.
+            comes with a simple or transparent (png) background for no extra cost, unless you would like a detailed background for an <strong>additional £10</strong>.
+            <br>
+            <p id="staticmodel2" style="font-size:20px;">• animated character model - <strong>£35</strong> </p>
+            a simple, looped animation (such as idle, walk, or action animations), in either gif or mp4 format with a simple or transparent background, unless you would like a detailed background for an <strong>additional £10</strong>.
+            <br>
+            <p id="modelscharacter3d" style="font-size: 22px;">♥ 3d item models . . . ♥ </p> custom low-poly 3d models of objects or items, designed in the same retro-inspired style. also come uv-mapped and textured, and either static or with motion.
+            <br>
+            <p id="staticmodel2" style="font-size:20px;">• static item model - <strong>£15</strong> </p>
+            rendered object with a simple or transparent (png) background, or a detailed background for a further <strong>£10</strong>.
+            <br>
+            <p id="staticmodel2" style="font-size:20px;">• animated item model - <strong>£25</strong> </p>
+            a rotating item animation for use in games, websites, or presentations, comes in a gif/mp4 format with a simple or transparent background, or a detailed background for a further <strong>£10</strong>.
+            <br>
+            <p id="modelscharacter3d" style="font-size: 22px;">♥ rigged 3d models . . . ♥ </p> 
+            fully rigged 3D character/item models, ready for import into your game or project. these models come UV-mapped, fully rigged, and exported in the appropriate file formats for easy integration.
+            <br>
+            <p id="staticmodel2" style="font-size:20px;">• item model - <strong>£35</strong> </p>
+            a complete low-poly, fully rigged interactive item model that’s ready for use in game engines like unity or unreal. you’ll receive the model file for integration into your project at no extra cost.
+            <br>
+            <p id="staticmodel2" style="font-size:20px;">• character model - <strong>£45</strong> </p>
+            a complete low-poly, fully rigged character model that’s ready for use in game engines like unity or unreal. you’ll receive the model file for integration into your project at no extra cost.
+            <br>
+            <p id="modelscharacter3d" style="font-size: 22px;">♥ additional info . . . ♥ </p> 
+            ♥ please contact me via email for a custom quotation if your project involves more complex or large-scale work. <br>
+            ♥ do let me know about any deadlines, the usual delivery of my 3d work takes <strong>7-14 days</strong>.<br>
+            ♥ two revisions are included to ensure you are satisfied with the workflow. please share any requests or additions early in the process to minimize corrections later.
+            <br>
+        </div>
+        </div>
+       <nav>
+        <div id="backbutton1">
+        <a data-target="services" style="color:#6d6d6d;"> go back </a>
+        </div>
+       </nav>
+    </section>
+    <section id="conceptart">
+        <div id="conceptheadertext">
+            concept art
+           </div>
+           <div class="conceptcontainer222">
+            <div id="conceptexample1">
+                <div id="conceptexample1inner"></div>
+            </div>
+            <div id="conceptexample2">
+                <div id="conceptexample2inner"></div>
+            </div>
+            <div id="description1">
+    from character designs and turnarounds to environments, each concept serves as a foundation for 3d modelling, animation, or game development, aligned with your creative vision.
+                <br><br><p style="color:#080808; text-align: center; font-size:20px;">↓ scroll down for available services ↓</p>
+            </div>
+            <div id="serviceslist2">
+                <p id="modelscharacter3d1" style="font-size: 22px;">♥ character concept art . . . ♥ </p> bring your characters to life with detailed and creative concept art. from simple sketches to fully shaded and coloured designs, each service is crafted to fit your project's needs, whether for video games, animations, etc.
+            <br>
+            <p id="staticmodel2" style="font-size:20px;">• simple sketch - <strong>£10</strong> </p>
+            two headshots with different expressions and one full body, no colour, white background (png).
+            <br> 
+            <p id="staticmodel2" style="font-size:20px;">• basic lineart - <strong>£15</strong> </p>
+            two headshots with different expressions and one full body, full colour, simple or transparent background (png).
+            <br>
+            <p id="staticmodel2" style="font-size:20px;">• detailed lineart - <strong>£20</strong> </p>
+            two headshots with different expressions and one full body, full colour, shading and lighting, simple or transparent background (png). detailed background available for an <strong>additional £10</strong>.
+            <br>
+            <p id="staticmodel2" style="font-size:20px;">• detailed turnaround - <strong>£35</strong> </p>
+            four different perspectives (front view, back view, left and right views), with conceptual inventory items. includes full shading and lighting, simple background (no transparent option). detailed background available for an <strong>additional £10</strong>.
+            <br>
+            <p id="modelscharacter3d1" style="font-size: 22px;">♥ item concept art . . . ♥ </p> tangible assets for your project with imaginative item designs. includes regular hand-held items down to outfit design.
+            <br>
+            <p id="staticmodel2" style="font-size:20px;">• simple sketch - <strong>£5</strong> </p>
+            a basic, uncoloured sketch of your item with a white background, ideal for conceptualising shapes and forms.
+            <br>
+            <p id="staticmodel2" style="font-size:20px;">• basic lineart - <strong>£10</strong> </p>
+            a more refined line drawing of your item, fully coloured with a choice of a simple or transparent background.
+            <br>
+            <p id="staticmodel2" style="font-size:20px;">• detailed - <strong>£15</strong> </p>
+            full-colour item design with shading and lighting effects, adding depth and detail. includes a simple background, or for an <strong>additional £10</strong>, you can opt for a detailed background.
+            <br>
+            <p id="modelscharacter3d1" style="font-size: 22px;">♥ environmental concept art . . . ♥ </p> 
+           serving as a foundation for your project's visual development. perfect for game levels, animated scenes, or any environment that needs a clear, creative vision.
+            <br>
+            <p id="staticmodel2" style="font-size:20px;">• simple sketch - <strong>£15</strong> </p>
+            an inital, uncoloured sketch of the environment, comes with a white png background.
+            <br>
+            <p id="staticmodel2" style="font-size:20px;">• basic lineart - <strong>£20</strong> </p>
+            a clean and refined line drawing with full colour, helping to create a clearer vision of your proposed environment. simple background included for no extra cost.
+            <p id="staticmodel2" style="font-size:20px;">• detailed lineart - <strong>£35</strong> </p>
+            fully coloured environmental concept art with shading and lighting to enhance the immersion the environment's atmosphere. 
+            <br>
+            <p id="modelscharacter3d1" style="font-size: 22px;">♥ additional info . . . ♥ </p> 
+            ♥ all concept art is delivered in png format. if you require a different file format, such as .psd, tiff, etc, please let me know in advance. <br>
+            ♥ delivery time for concept art is approximately <strong>5-14 days</strong> depending on complexity of the project. <br>
+            ♥ please contact me via email if you have specific requirements outside of my listed services that requires a custom quotes. <br>
+            ♥ all work created is exclusive to the <strong>client who commissioned it</strong>. you will retain full commercial and personal rights to the artwork upon final payment. 
+            <br>
+            </div>
+           </div>
+           <nav>
+            <div id="backbutton2">
+            <a data-target="services" style="color:#6d6d6d;"> go back </a>
+            </div>
+           </nav>
+    </section>
+    <section id="illusts">
+        <div id="illustsheadertext">
+            illustrations
+           </div>
+           <div class="illustscontainer222">
+            <div id="illustsexample1">
+                <div id="illustsexample1inner"></div>
+            </div>
+            <div id="illustsexample2">
+                <div id="illustsexample2inner"></div>
+            </div>
+            <div id="description1">
+                fully rendered headshots/busts and full body illustrations of your characters in my own art style with the highest attention to detail that i have to offer. also includes backgrounds, which can be used for things like twitch vtuber streaming.
+                <br><br><p style="color:#080808; text-align: center; font-size:20px;">↓ scroll down for available services ↓</p>
+            </div>
+            <div id="serviceslist2">
+                <p id="modelscharacter3d1" style="font-size: 22px;">♥ character illustrations . . . ♥ </p> creating beautiful illustrations of your original characters, currently not accepting fan art commissions of franchise characters due to licensing concerns.
+            <br>
+            <p id="staticmodel" style="font-size:20px;">• headshot/bust - <strong>£20</strong> </p>
+            a fully coloured, rendered, shaded and illustrated headshot or bust of your character, featuring your preferred expression and pose. this service includes a simple or transparent background. an animated version is available for an <strong>additional £10</strong>.
+            <br> 
+            <p id="staticmodel2" style="font-size:20px;">• full body - <strong>£25</strong> </p>
+            a fully coloured, rendered, shaded and illustrated full-body illustration of your character with your desired expression and pose. this service includes a simple or transparent background. an animated version is available for an <strong>additional £10</strong>. detailed backgrounds are also <strong>£10 extra</strong>.
+            <br> 
+            <p id="staticmodel2" style="font-size:20px;">• emoji packs - <strong>£30</strong> </p>
+            a set of 6 illustrated emotes (normal, happy, sad, angry, disgust and love) featuring your character. the pack comes as static images, but can be animated for <strong>£5</strong>. transparent backgrounds come included at no extra cost.
+            <br>
+            <p id="staticmodel2" style="font-size:20px;">• matching profile pics - <strong>£35</strong> </p>
+            two headshots/bust illustrations of your desired characters. both fully coloured, rendered and shaded, comes with a simple background.
+            <br>
+            <p id="modelscharacter3d1" style="font-size: 22px;">♥ brand illustrations . . . ♥ </p> 
+            illustrations specifically tailored to your brand, provided with full licensing rights.
+            <br>
+            <p id="staticmodel2" style="font-size:20px;">• logo - <strong>£15</strong> </p>
+            professionally designed logo tailored to represent your brand or project. comes in a png format with transparent and/or other background options.
+            for an additional <strong>£10</strong> you can purchase a logo pack of three variations, giving you multiple options to suit various specific design needs.
+            <br>
+            <p id="staticmodel2" style="font-size:20px;">• banner - <strong>£20</strong> </p>
+            a fully customised banner designed to enhance your online presence. ideal for social media, websites, or promotional purposes. delivered in the required dimensions and tailored to match your branding style and vision.
+            <br>
+            <p id="staticmodel2" style="font-size:20px;">• brand package - <strong>£55</strong> </p>
+            a pack of three logos and a banner, fully customised for your brand/project.
+            <br>
+            <p id="modelscharacter3d1" style="font-size: 22px;">♥ additional info . . . ♥ </p> 
+            ♥ all artworks are delivered in high-res png or jpg formats, with transparency options available where applicable. <br>
+            ♥ revisions are limited to 2 per commission. 
+            ♥ all illustration commissions are for personal-use unless specified otherwise. commercial use or redistribution of artwork will require an additional licensing fee. <br>
+            ♥ delivery time for illustrations is approximately <strong>7-14 days</strong> depending on complexity of the project. <br>
+            <br>
+            </div>
+           </div>
+           <nav>
+            <div id="backbutton2">
+            <a data-target="services" style="color:#6d6d6d;"> go back </a>
+            </div>
+           </nav>
+    </section>
+    <section id="pixels">
+        <div id="illustsheadertext2">
+            pixel art
+           </div>
+           <div class="illustscontainer222">
+            <div id="illustsexample1">
+                <div id="illustsexample1inner"></div>
+            </div>
+            <div id="illustsexample2">
+                <div id="illustsexample2inner"></div>
+            </div>
+            <div id="description1">
+                pixel art services are similar to my illustrations. fully rendered headshot/busts and full body pixel art of your characters in my art style. this also includes backgrounds. for extra costs, your static pixel art can be animated. 
+                <p style="color:#080808; text-align: center; font-size:20px;">↓ scroll down for available services ↓</p>
+            </div>
+            <div id="serviceslist2">
+                <p id="modelscharacter3d1" style="font-size: 22px;">♥ character illustrations . . . ♥ </p> creating beautiful illustrations of your original characters, currently not accepting fan art commissions of franchise characters due to licensing concerns.
+            <br>
+            <p id="staticmodel" style="font-size:20px;">• headshot/bust - <strong>£20</strong> </p>
+            a fully coloured, rendered, and shaded pixel headshot or bust of your character, featuring your preferred expression and pose. this service includes a simple or transparent background. an animated version is available for an <strong>additional £10</strong>.
+            <br> 
+            <p id="staticmodel2" style="font-size:20px;">• full body - <strong>£25</strong> </p>
+            a fully coloured, rendered, and shaded pixel full-body illustration of your character with your desired expression and pose. this service includes a simple or transparent background. an animated version is available for an <strong>additional £10</strong>. detailed backgrounds are also <strong>£10 extra</strong>.
+            <br> 
+            <p id="staticmodel2" style="font-size:20px;">• emoji packs - <strong>£30</strong> </p>
+            a set of 6 pixel emotes (normal, happy, sad, angry, disgust and love) featuring your character. the pack comes as static images, but can be animated for <strong>£5</strong>. transparent backgrounds come included at no extra cost.
+            <br>
+            <p id="staticmodel2" style="font-size:20px;">• matching profile pics - <strong>£35</strong> </p>
+            two pixel headshots/busts of your desired characters. both fully coloured, rendered and shaded, comes with a simple background.
+            <br>
+            <p id="modelscharacter3d1" style="font-size: 22px;">♥ additional info . . . ♥ </p> 
+            ♥ all artworks are delivered in high-res png or jpg formats, with transparency options available where applicable. <br>
+            ♥ revisions are limited to 2 per commission. 
+            ♥ all pixel commissions are for personal-use unless specified otherwise. commercial use or redistribution of artwork will require an additional licensing fee. <br>
+            ♥ delivery time for pixel art is approximately <strong>7-14 days</strong> depending on complexity of the project. <br>
+            <br>
+            </div>
+           </div>
+           <nav>
+            <div id="backbutton2">
+            <a data-target="services" style="color:#6d6d6d;"> go back </a>
+            </div>
+           </nav>
+    </section>
+    <section id="websitess">
+        <div id="illustsheadertext2">
+            web design
+           </div>
+           <div class="illustscontainer222">
+            <div id="illustsexample1">
+                <div id="illustsexample1inner"></div>
+            </div>
+            <div id="illustsexample2">
+                <div id="illustsexample2inner"></div>
+            </div>
+            <div id="description1">
+                fully functional and interactive websites made for any purpose, ranging from portfolio websites like my very own. fully customisable within the package you purchase. all created entirely using html, css and javascript.
+                <br><br><p style="color:#080808; text-align: center; font-size:20px;">↓ scroll down for available services ↓</p>
+            </div>
+            <div id="serviceslist2">
+                <p id="modelscharacter3d1" style="font-size: 22px;">♥ websites . . . ♥ </p> please take your time and read through each package, my most basic package begins at £60.
+            <br>
+            <p id="staticmodel" style="font-size:20px;">• basic package  - <strong>£60</strong> </p>
+            includes a home page, about page, contact form, simple design layout and basic functionality (e.g social media links, content upload features, etc) - ideal for a personal blog or portfolio.
+            <br> 
+            <p id="staticmodel2" style="font-size:20px;">• brand package - <strong>£120</strong> </p>
+            unique branding illustrations created by me for your brand, such as three different logo designs and a banner. includes the basic package.
+            <br> 
+            <p id="staticmodel2" style="font-size:20px;">• extra pages - <strong>£20</strong> </p>
+           if your site requires more pages, it is £20 per extra page.
+            <br>
+            <p id="modelscharacter3d1" style="font-size: 22px;">♥ additional info . . . ♥ </p> 
+            ♥ what you will receive: a neatly organised folder containing the html, css and javascript files needed for your website. <br>
+            ♥ by purchasing website design from me, you understand that you are responsible for setting up a hosting environment. i can highly recommend <a href="https://neocities.org/" target="blank" style="text-decoration: none; color:#080808; border-bottom: 2px dotted #080808;">neocities</a> or <a href="https://github.com/" target="blank" style="text-decoration: none; color:#080808; border-bottom: 2px dotted #080808;">github pages</a> for hosting. if you choose one of the two i will assist you in fully setting up your website. however, for custom domains it is an additional <strong>£10</strong>, please be aware that neocities requires a supporter subscription for enabling custom domains, whereas the process for github is free in itself* 
+            <br> *website domains may cost money to buy. 
+            <br> ♥ revisions are limited to 2 per commission. <br>
+            ♥ delivery time for web design is approximately <strong>7-14 days</strong> depending on complexity of the project.
+            <br>
+            </div>
+           </div>
+           <nav>
+            <div id="backbutton2">
+            <a data-target="services" style="color:#6d6d6d;"> go back </a>
+            </div>
+           </nav>
+    </section>
+    <section id="form">
+        <div id="illustsheadertext2">
+            form
+           </div>
+        <form id="commissionForm" spellcheck="false">
+            
+            <label for="name">name/username:</label>
+            <input type="text" id="name" name="name" placeholder="enter your name or username" required>
+            
+            <label for="email">contact email:</label>
+            <input type="email" id="email" name="email" placeholder="enter your email" required>
+            
+            
+            <label for="service">select a service:</label>
+            <select id="dropdown" size="9"><style>
+            </style>
+              <option value="" disabled>----♥ 3d models ♥----</option>
+              <option value="25" data-addons="detailedBackground">static character model - £25</option>
+              <option value="35" data-addons="detailedBackground">animated character model - £35</option>
+              <option value="15" data-addons="detailedBackground">static item model - £15</option>
+              <option value="25" data-addons="detailedBackground">animated item model - £25</option>
+              <option value="35">rigged item model - £35</option>
+              <option value="45">rigged character model - £45</option>
+              <option value="" disabled>----♥ concept art ♥----</option>
+              <option value="10">simple character sketch - £10</option>
+              <option value="15">basic character lineart - £15</option>
+              <option value="20" data-addons="detailedBackground">detailed character lineart - £20</option>
+              <option value="35" data-addons="detailedBackground">detailed character turnaround - £35</option>
+              <option value="5">simple item sketch - £5</option>
+              <option value="10">basic item lineart - £10</option>
+              <option value="15" data-addons="detailedBackground">detailed item lineart - £15</option>
+              <option value="15">simple environmental sketch - £15</option>
+              <option value="20">basic environmental lineart - £20</option>
+              <option value="35">detailed environmental lineart - £35</option>
+              <option value="" disabled>----♥ illustrations ♥----</option>
+              <option value="20" data-addons="animation">headshot/bust - £20</option>
+              <option value="25" data-addons="animation,detailedBackground">full body - £25</option>
+              <option value="30" data-addons="animation" >emoji pack - £25</option>
+              <option value="35">matching profile pictures - £35</option>
+              <option value="15" data-addons="extrapack">logo - £15</option>
+              <option value="20">banner - £20</option>
+              <option value="55">brand package - £55</option>
+              <option value="" disabled>----♥ web design ♥----</option>
+              <option value="60" data-addons="customdomain" >basic package - £60</option>
+              <option value="120" data-addons="customdomain">brand package - £120</option>
+
+            </select>
+            
+            <div id="addonsContainer" style="display: none;">
+              <label for="addons">add-ons:</label>
+              <select id="addons" name="addons[]" multiple>
+                
+              </select>
+            </div>
+      
+            
+            <label for="service">reference images:</label>
+            <div id="filerelated">
+            <label for="file-upload" class="custom-file-upload">
+                upload file
+              </label>
+              <input id="file-upload" type="file" />
+              <p id="file-name">no file selected</p>
+            </div>
+              <script src="fileservice.js"></script>
+            
+            <label for="payment-username">paypal/ko-fi username:</label>
+            <input type="text" id="payment-username" name="payment-username" placeholder="where i will send your invoice to" required>
+            
+            <label for="extra-info">extra info:</label>
+            <textarea id="extra-info" name="extra-info" rows="4" placeholder="additional details about your commission (optional)"></textarea>
+      
+            
+             <div id="totalCost1">
+            <p>total cost: £<span id="totalCost">0</span></p>
+            </div>
+
+            <div id="checkbox111">
+                <nav>
+                  <label>
+                      <input type="checkbox" id="termsCheckbox" name="terms" required>
+                      i have read and accepted the <a data-target="tos" style="color:#6d6d6d; border-bottom: 2px dotted;"> terms of service </a>.
+                    </label>
+                </nav>
+              </div>
+
+              <div id="submitbutton">
+            <button type="submit">currently a wip</button>
+        </div>
+          </form>
+    </section>
+    <script src="quickservice.js"></script>
+</div>
+</div>
+    <div class="container222">
+        <div id="leftside">
+            <div id="lace1"></div>
+        </div>
+        <div id="lace2"></div>
+        <div id="topsside">
+            <div id="title">
+               jsisoul_ store
+            </div>
+        </div>
+    </div>
+</div>
+<div id="credittome">
+    <a href="index.html" target="blank" style="text-decoration: none; color: #acaaaa;">
+        jsisoul_ ♥ all rights reserved
+    </a>
+</div>
+<script src="store.js"></script>
+<script src="store2.js"></script>
+    <script type="text/javascript">
+        // <![CDATA[
+        var colour="#000000";
+        var sparkles=120;
+        
+        /****************************
+        *  Tinkerbell Magic Sparkle *
+        * (c) 2005 mf2fm web-design *
+        *  http://www.mf2fm.com/rv  *
+        * DON'T EDIT BELOW THIS BOX *
+        ****************************/
+        var x=ox=400;
+        var y=oy=300;
+        var swide=800;
+        var shigh=600;
+        var sleft=sdown=0;
+        var tiny=new Array();
+        var star=new Array();
+        var starv=new Array();
+        var starx=new Array();
+        var stary=new Array();
+        var tinyx=new Array();
+        var tinyy=new Array();
+        var tinyv=new Array();
+        
+        window.onload=function() { if (document.getElementById) {
+          var i, rats, rlef, rdow;
+          for (var i=0; i<sparkles; i++) {
+            var rats=createDiv(3, 3);
+            rats.style.visibility="hidden";
+            document.body.appendChild(tiny[i]=rats);
+            starv[i]=0;
+            tinyv[i]=0;
+            var rats=createDiv(5, 5);
+            rats.style.backgroundColor="transparent";
+            rats.style.visibility="hidden";
+            var rlef=createDiv(1, 5);
+            var rdow=createDiv(5, 1);
+            rats.appendChild(rlef);
+            rats.appendChild(rdow);
+            rlef.style.top="2px";
+            rlef.style.left="0px";
+            rdow.style.top="0px";
+            rdow.style.left="2px";
+            document.body.appendChild(star[i]=rats);
+          }
+          set_width();
+          sparkle();
+        }}
+        
+        function sparkle() {
+          var c;
+          if (x!=ox || y!=oy) {
+            ox=x;
+            oy=y;
+            for (c=0; c<sparkles; c++) if (!starv[c]) {
+              star[c].style.left=(starx[c]=x)+"px";
+              star[c].style.top=(stary[c]=y)+"px";
+              star[c].style.clip="rect(0px, 5px, 5px, 0px)";
+              star[c].style.visibility="visible";
+              starv[c]=50;
+              break;
+            }
+          }
+          for (c=0; c<sparkles; c++) {
+            if (starv[c]) update_star(c);
+            if (tinyv[c]) update_tiny(c);
+          }
+          setTimeout("sparkle()", 40);
+        }
+        
+        function update_star(i) {
+          if (--starv[i]==25) star[i].style.clip="rect(1px, 4px, 4px, 1px)";
+          if (starv[i]) {
+            stary[i]+=1+Math.random()*3;
+            if (stary[i]<shigh+sdown) {
+              star[i].style.top=stary[i]+"px";
+              starx[i]+=(i%5-2)/5;
+              star[i].style.left=starx[i]+"px";
+            }
+            else {
+              star[i].style.visibility="hidden";
+              starv[i]=0;
+              return;
+            }
+          }
+          else {
+            tinyv[i]=50;
+            tiny[i].style.top=(tinyy[i]=stary[i])+"px";
+            tiny[i].style.left=(tinyx[i]=starx[i])+"px";
+            tiny[i].style.width="2px";
+            tiny[i].style.height="2px";
+            star[i].style.visibility="hidden";
+            tiny[i].style.visibility="visible"
+          }
+        }
+        
+        function update_tiny(i) {
+          if (--tinyv[i]==25) {
+            tiny[i].style.width="1px";
+            tiny[i].style.height="1px";
+          }
+          if (tinyv[i]) {
+            tinyy[i]+=1+Math.random()*3;
+            if (tinyy[i]<shigh+sdown) {
+              tiny[i].style.top=tinyy[i]+"px";
+              tinyx[i]+=(i%5-2)/5;
+              tiny[i].style.left=tinyx[i]+"px";
+            }
+            else {
+              tiny[i].style.visibility="hidden";
+              tinyv[i]=0;
+              return;
+            }
+          }
+          else tiny[i].style.visibility="hidden";
+        }
+        
+        document.onmousemove=mouse;
+        function mouse(e) {
+          set_scroll();
+          y=(e)?e.pageY:event.y+sdown;
+          x=(e)?e.pageX:event.x+sleft;
+        }
+        
+        function set_scroll() {
+          if (typeof(self.pageYOffset)=="number") {
+            sdown=self.pageYOffset;
+            sleft=self.pageXOffset;
+          }
+          else if (document.body.scrollTop || document.body.scrollLeft) {
+            sdown=document.body.scrollTop;
+            sleft=document.body.scrollLeft;
+          }
+          else if (document.documentElement && (document.documentElement.scrollTop || document.documentElement.scrollLeft)) {
+            sleft=document.documentElement.scrollLeft;
+            sdown=document.documentElement.scrollTop;
+          }
+          else {
+            sdown=0;
+            sleft=0;
+          }
+        }
+        
+        window.onresize=set_width;
+        function set_width() {
+          if (typeof(self.innerWidth)=="number") {
+            swide=self.innerWidth;
+            shigh=self.innerHeight;
+          }
+          else if (document.documentElement && document.documentElement.clientWidth) {
+            swide=document.documentElement.clientWidth;
+            shigh=document.documentElement.clientHeight;
+          }
+          else if (document.body.clientWidth) {
+            swide=document.body.clientWidth;
+            shigh=document.body.clientHeight;
+          }
+        }
+        
+        function createDiv(height, width) {
+          var div=document.createElement("div");
+          div.style.position="absolute";
+          div.style.height=height+"px";
+          div.style.width=width+"px";
+          div.style.overflow="hidden";
+          div.style.backgroundColor=colour;
+          return (div);
+        }
+        // ]]>
+        </script>
+  </body>
+  </html>
