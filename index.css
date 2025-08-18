@@ -164,14 +164,14 @@ body{
 
 .links{
     position: absolute;
-    left: 50px;
+    left: 60px;
 }
 
 #homepage{
     z-index: 5;
     position: absolute;
     top: 520px;
-    left: 1150px;
+    left: 1080px;
     width: 200px;
     font-size: 18px;
 }
@@ -184,7 +184,7 @@ body{
     z-index: 5;
     position: absolute;
     top: 520px;
-    left: 1240px;
+    left: 1160px;
     font-size: 18px;
 }
 
@@ -192,15 +192,27 @@ body{
     transform: scale(1.04);
  }
 
- #tiktok{
+ #tumblr{
     z-index: 5;
     position: absolute;
     top: 520px;
-    left: 1360px;
+    left: 1275px;
     font-size: 18px;
 }
 
-#tiktok:hover{
+#tumblr:hover{
+    transform: scale(1.04);
+ }
+
+ #toyhouse{
+    z-index: 5;
+    position: absolute;
+    top: 520px;
+    left: 1368px;
+    font-size: 18px;
+}
+
+#toyhouse:hover{
     transform: scale(1.04);
  }
 
