@@ -164,7 +164,7 @@ body{
 
 .links{
     position: absolute;
-    left: 60px;
+    left: 70px;
 }
 
 #homepage{
@@ -180,7 +180,7 @@ body{
      transform: scale(1.04); 
 }
 
-#instagram{
+#twitter{
     z-index: 5;
     position: absolute;
     top: 520px;
@@ -188,7 +188,7 @@ body{
     font-size: 18px;
 }
 
-#instagram:hover{
+#twitter:hover{
     transform: scale(1.04);
  }
 
@@ -196,7 +196,7 @@ body{
     z-index: 5;
     position: absolute;
     top: 520px;
-    left: 1275px;
+    left: 1250px;
     font-size: 18px;
 }
 
@@ -208,7 +208,7 @@ body{
     z-index: 5;
     position: absolute;
     top: 520px;
-    left: 1368px;
+    left: 1340px;
     font-size: 18px;
 }
 
