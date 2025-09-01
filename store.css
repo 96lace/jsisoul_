@@ -56,8 +56,8 @@ nav{
 
 #toslink{
     position: absolute;
-    top: 89px;
-    left: 285px;
+    top: 90.5px;
+    left: 76px;
 }
 
 #squaretalking{
@@ -201,7 +201,7 @@ nav{
     top: 9px;
     left: 10px;
     width: 230px;
-    height: 450px;
+    height: 400px;
     background-color: #292929;
     text-shadow: 0 0 2px #919090;
     color:#acaaaa; 
@@ -239,7 +239,7 @@ nav{
     top: 9px;
     left: 280px;
     width: 230px;
-    height: 450px;
+    height: 400px;
     background-color: #292929;
     text-shadow: 0 0 2px #919090;
     color:#acaaaa;
@@ -260,10 +260,10 @@ nav{
 
 #note3{
     position: absolute;
-    top: 500px;
+    top: 450px;
     left: 10px;
     width: 500px;
-    height: 440px;
+    height: 280px;
     background-color: #292929;
     text-shadow: 0 0 2px #919090;
     color:#acaaaa;
